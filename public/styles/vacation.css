@@ -38,6 +38,10 @@ header h1 {
     text-shadow: 0 0.125em 0.25em rgba(0,0,0,0.5);
 }
 
+h2 {
+    text-align: center;
+}
+
 #vacation-form {
     padding: 2em;
 }
@@ -48,7 +52,7 @@ label {
     margin-top: 1em;
 }
 
-select, input[type="date"], input[type="number"] {
+select, input {
     width: 100%;
     padding: 0.5em;
     background: none;
