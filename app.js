@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
 });
 
 app.post('/submit-vacation', (req, res) => {
-    res.render('confirmation', { order });
+    res.render('confirmation');
 });
 
 app.listen(PORT, () => {
