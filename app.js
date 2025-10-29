@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
     res.render('home');
 });
 
-app.post('/submit-order', (req, res) => {
+app.post('/submit-vacation', (req, res) => {
     res.render('confirmation', { order });
 });
 

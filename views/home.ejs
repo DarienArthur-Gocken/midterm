@@ -10,6 +10,43 @@
     <link rel="stylesheet" href="styles/vacation.css">
 </head>
 <body>
+    <main>
+        <header>
+            <h1>Book Your Dream Vacation</h1>
+        </header>
 
+        <form id="vacation-form" action="submit-vacation" method="post">
+            <fieldset>
+                <label for="destination">Destination</label>
+                <select id="destination" name="destination">
+                    <option value="none">Choose a destination...</option>
+                    <option value="baliINDO">Bali, Indonesia</option>
+                    <option value="parisFR">Paris, France</option>
+                    <option value="tokyoJP">Tokyo, Japan</option>
+                    <option value="maldives">Maldives</option>
+                    <option value="newyorkUS">New York City, USA</option>
+                </select>
+                <span id="err-destination" class="error">Destination must be selected!</span>
+
+                <div class="row">
+                    <div class="col">
+                        <label for="departuredate">Departure Date</label>
+                        <input type="date" id="departuredate" name="departuredate">
+                    </div>
+                    <div class="col">
+                        <label for="travelers">Number of Travelers</label>
+                        <input type="number" id="travelers" name="travelers" min="1" value="0">
+                        <span id="err-travelers" class="error">There must be more than one traveler!</span>
+                    </div>
+                </div>
+            </fieldset>
+
+            <button type="submit" id="find-vacation">Find My Vacation</button>
+        </form>
+    </main>
+
+    <footer>
+        <a href="https://github.com/DarienArthur-Gocken/midterm">https://github.com/DarienArthur-Gocken/midterm</p>
+    </footer>
 </body>
-</html
+</html>
